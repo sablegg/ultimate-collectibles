@@ -1,4 +1,5 @@
 import PageHero from "@/components/PageHero";
+import { heroForSlug } from "@/lib/heroImages";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata("ebay");
@@ -15,6 +16,7 @@ export default function EbayPage() {
       <PageHero
         header="Shop on eBay"
         intro="Can't make it to the store? Browse our active eBay listings — we ship anywhere in the US. Featured picks are selected by our team, and full listings are available on our eBay store."
+        heroImage={heroForSlug("ebay")}
       />
       <div className="page-content" style={{ textAlign: "center" }}>
         <a href={ebayStoreUrl} target="_blank" rel="noopener noreferrer" className="ebay-btn">

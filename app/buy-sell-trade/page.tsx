@@ -1,5 +1,6 @@
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
+import { heroForSlug } from "@/lib/heroImages";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata("buySellTrade");
@@ -10,6 +11,7 @@ export default function BuySellTradePage() {
       <PageHero
         header="Buy, Sell &amp; Trade at Ultimate Collectibles"
         intro="Whether you're looking to add to your collection, let go of something you no longer need, or swap for something new — we make it happen. Walk in anytime during store hours and our team will take a look at what you've got or point you towards the items you are looking for!"
+        heroImage={heroForSlug("buy-sell-trade")}
       />
       <div className="page-content">
         <div className="content-block">

@@ -1,4 +1,5 @@
 import PageHero from "@/components/PageHero";
+import { heroForSlug } from "@/lib/heroImages";
 import InquiryForm from "@/components/InquiryForm";
 import { buildMetadata } from "@/lib/seo";
 import { formEndpoints } from "@/lib/siteData";
@@ -12,6 +13,7 @@ export default function AppraisalPage() {
         eyebrow="Collections Galore!"
         header="Free Collection Appraisals"
         intro="We have appraised thousands of collections throughout the years. If you are not sure what your collection is worth, bring it in and we'll walk you through it — no charge, no pressure."
+        heroImage={heroForSlug("appraisal")}
       />
       <div className="page-content">
         <div className="content-block">

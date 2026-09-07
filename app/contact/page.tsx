@@ -10,10 +10,11 @@ export const metadata = buildMetadata("contact");
 export default function ContactPage() {
   return (
     <>
-      <PageHero
-        header="Get in Touch"
-        intro="Have a question? Want to know if we buy a specific item? Looking to schedule an appraisal? Drop us a line and we'll get back to you as soon as we can."
-      />
+         <PageHero
+           header="Contact Us"
+           intro="Have a question about an item, a collection, or store hours? Get in touch — we reply as quickly as we can."
+           heroImage={heroForSlug("contact")}
+         />
       <div className="page-content">
         <div className="content-block">
           <h2 className="content-block-title">Contact details</h2>

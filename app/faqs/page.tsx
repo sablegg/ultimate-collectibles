@@ -45,7 +45,8 @@ export default function FaqsPage() {
     <>
       <PageHero
         header="Frequently Asked Questions"
-        intro="Got questions? We've got answers. If you don't see what you're looking for here, give us a call, stop by the store, or see us at an event or card show."
+        intro="Answers to the most common questions about buying, selling, and trading at Ultimate Collectibles. If you don't see your question here, contact us and we'll reply as quickly as possible."
+        heroImage={heroForSlug("faqs")}
       />
       <div className="page-content">
         {faqs.map((f) => (

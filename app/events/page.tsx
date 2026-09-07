@@ -20,10 +20,11 @@ const upcomingEvents = [
 export default function EventsPage() {
   return (
     <>
-      <PageHero
-        header="Shows &amp; Events"
-        intro="We travel to collector shows and events throughout the year — come find us! We bring inventory with us and love connecting with the collector community outside the shop. Check back here for our updated schedule, and join the email list so you never miss an event."
-      />
+         <PageHero
+           header="Events & Shows"
+           intro="Find us at local shows and vendor events throughout the year. We post our schedule and featured events here so you can come see us in-person."
+           heroImage={heroForSlug("events")}
+         />
       <div className="page-content">
         {upcomingEvents.map((ev) => (
           <div className="event-card" key={ev.name + ev.date}>

@@ -1,4 +1,5 @@
 import PageHero from "@/components/PageHero";
+import { heroForSlug } from "@/lib/heroImages";
 import InquiryForm from "@/components/InquiryForm";
 import { buildMetadata } from "@/lib/seo";
 import { formEndpoints } from "@/lib/siteData";
@@ -24,6 +25,7 @@ export default function BuyingCollectionsPage() {
       <PageHero
         header="We Buy Collections"
         intro="Cleaning out a collection? Downsizing? Inherited something you're not sure about? We buy collections of all sizes — Pokémon, sports cards, records, comics, posters, memorabilia, and more. We make the process easy and give fair offers."
+        heroImage={heroForSlug("buying-collections")}
       />
       <div className="page-content">
         <div className="content-block">

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { buildMetadata } from "@/lib/seo";
 import DirectionsMap from "@/components/DirectionsMap";
+import HeroSlideshow from "@/components/HeroSlideshow";
 
 export const metadata = buildMetadata("home");
 
@@ -21,25 +22,7 @@ export default function HomePage() {
       {/* HERO — swap for real JPG/WebP images at /public/images/hero/.
           Recommended size: 1600x500px. Ken Burns animation + slide order
           become admin-managed in Phase 3. */}
-      <div className="hero-section">
-        <div className="hero-placeholder">
-          <div className="icon">🖼</div>
-          <div>Hero images go here — 1600×500px JPG/WebP</div>
-        </div>
-        <div className="hero-overlay">
-          <div>
-            <div className="hero-label">Buy · Sell · Trade</div>
-            <div className="hero-sublabel">
-              Pokémon · Sports Cards · Records · Comics &amp; more
-            </div>
-          </div>
-          <div className="hero-right">
-            <Link href="/buy-sell-trade" className="hero-cta">
-              Shop All Categories
-            </Link>
-          </div>
-        </div>
-      </div>
+      <HeroSlideshow />
 
       {/* WELCOME / INTRO — approved copy */}
       <div className="page-content" style={{ paddingBottom: 0 }}>

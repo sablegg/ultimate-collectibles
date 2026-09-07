@@ -23,9 +23,7 @@ export default function SiteHeader() {
 
       <nav className="nav">
         <Link href="/" className="logo-area">
-          {/* Drop your logo file at /public/images/logo.png and this renders it.
-              Falls back to the placeholder box if the file isn't there yet. */}
-          <span className="logo-box">UC</span>
+          <img src="/images/logo/ultimate_logo.png" alt="Ultimate Collectibles" className="site-logo" />
           <span className="logo-text">
             Ultimate Collectibles
             <span>Hopkins, MN</span>

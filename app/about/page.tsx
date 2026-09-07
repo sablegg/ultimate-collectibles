@@ -1,5 +1,6 @@
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
+import { heroForSlug } from "@/lib/heroImages";
 import { buildMetadata } from "@/lib/seo";
 import { business } from "@/lib/siteData";
 
@@ -11,6 +12,7 @@ export default function AboutPage() {
       <PageHero
         header="About Ultimate Collectibles"
         intro="We're a collectibles shop based in Hopkins, MN — right in the heart of the Twin Cities. We buy, sell, and trade Pokémon cards, sports cards, vinyl records, comics, movie posters, memorabilia, and more. Whether you're a lifelong collector or just getting started, you're welcome here."
+        heroImage={heroForSlug("about")}
       />
       <div className="page-content">
         <div className="content-block">

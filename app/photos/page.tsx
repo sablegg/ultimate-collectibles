@@ -12,7 +12,8 @@ export default function PhotosPage() {
     <>
       <PageHero
         header="Photos"
-        intro="Take a look inside the store — our inventory, our space, and some of the great finds that have come through. Follow us on Instagram and Facebook for more."
+        intro="Browse photos from our store, events, and community happenings."
+        heroImage={heroForSlug("photos")}
       />
       <div className="page-content">
         <div className="gallery-grid">

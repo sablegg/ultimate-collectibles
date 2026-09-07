@@ -1,11 +1,12 @@
 import Link from "next/link";
 import PageHero from "./PageHero";
+import { heroForSlug } from "@/lib/heroImages";
 import { CategoryPageData } from "@/lib/categoryContent";
 
 export default function CategoryPageTemplate({ data }: { data: CategoryPageData }) {
   return (
     <div className="category-page">
-      <PageHero header={data.header} intro={data.intro} />
+      <PageHero header={data.header} intro={data.intro} heroImage={heroForSlug(data.slug)} />
 
       <div className="page-content">
         {data.bullets.length > 0 && (
