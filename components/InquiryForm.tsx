@@ -120,6 +120,11 @@ export default function InquiryForm({
         <textarea name="message" rows={4} required />
       </label>
 
+      <label className="full-width consent-label">
+        <input type="checkbox" name="consent" value="yes" required />{' '}
+        By submitting this form, you agree that Ultimate Collectibles may use the information provided to contact you regarding your appointment or request. See our <a href="/legal/privacy">Privacy Policy</a>.
+      </label>
+
       <button type="submit" className="form-submit" disabled={status === "sending"}>
         {status === "sending" ? "Sending..." : submitLabel}
       </button>
