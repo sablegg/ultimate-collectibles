@@ -1,0 +1,93 @@
+import Link from "next/link";
+import { buildMetadata } from "@/lib/seo";
+import DirectionsMap from "@/components/DirectionsMap";
+
+export const metadata = buildMetadata("home");
+
+const categories = [
+  { name: "Pokémon", href: "/pokemon", icon: "🃏", tag: "New & vintage" },
+  { name: "Sports Cards", href: "/sports-cards", icon: "🏆", tag: "Bulk buying" },
+  { name: "Non-Sports Cards", href: "/non-sports-cards", icon: "🎴", tag: "TCG & pop culture" },
+  { name: "Records", href: "/records", icon: "🎵", tag: "In-store new releases" },
+  { name: "Comics", href: "/comics", icon: "📖", tag: "Golden Age to Modern" },
+  { name: "Movie Posters", href: "/posters", icon: "🖼", tag: "Vintage & modern" },
+  { name: "Memorabilia", href: "/memorabilia", icon: "👕", tag: "Signed & authenticated" },
+  { name: "Supplies", href: "/supplies", icon: "📦", tag: "Sleeves, binders..." },
+];
+
+export default function HomePage() {
+  return (
+    <>
+      {/* HERO — swap for real JPG/WebP images at /public/images/hero/.
+          Recommended size: 1600x500px. Ken Burns animation + slide order
+          become admin-managed in Phase 3. */}
+      <div className="hero-section">
+        <div className="hero-placeholder">
+          <div className="icon">🖼</div>
+          <div>Hero images go here — 1600×500px JPG/WebP</div>
+        </div>
+        <div className="hero-overlay">
+          <div>
+            <div className="hero-label">Buy · Sell · Trade</div>
+            <div className="hero-sublabel">
+              Pokémon · Sports Cards · Records · Comics &amp; more
+            </div>
+          </div>
+          <div className="hero-right">
+            <Link href="/buy-sell-trade" className="hero-cta">
+              Shop All Categories
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      {/* WELCOME / INTRO — approved copy */}
+      <div className="page-content" style={{ paddingBottom: 0 }}>
+        <div className="content-block" style={{ textAlign: "center" }}>
+          <h1 style={{ fontSize: 26, color: "#111", marginBottom: 12 }}>
+            Collectibles Store — Hopkins, MN
+          </h1>
+          <p style={{ color: "#444", lineHeight: 1.7 }}>
+            Come to the store to shop new and vintage Pokémon, Sports Cards,
+            Records &amp; Much More... You can bring in items to trade or
+            sell, and join the email list so you can catch up with us at one
+            of our many upcoming shows/events!
+          </p>
+        </div>
+      </div>
+
+      <div className="section-header">Shop by category</div>
+      <div className="categories-grid">
+        {categories.map((c) => (
+          <Link key={c.href} href={c.href} className="cat-card">
+            <div className="cat-icon">{c.icon}</div>
+            <div className="cat-name">{c.name}</div>
+            <div className="cat-tag">{c.tag}</div>
+          </Link>
+        ))}
+      </div>
+
+      <div className="action-banner blue">
+        <div className="banner-left">
+          Buying Collections
+          <span>We buy entire collections — Pokémon, sports, records &amp; more</span>
+        </div>
+        <Link className="banner-btn" href="/buying-collections">
+          Get a Quote →
+        </Link>
+      </div>
+
+      <div className="action-banner red">
+        <div className="banner-left">
+          Free Collection Appraisals
+          <span>Schedule a time — we&rsquo;ll explain the value of your collection</span>
+        </div>
+        <Link className="banner-btn" href="/appraisal">
+          Book Now →
+        </Link>
+      </div>
+
+      <DirectionsMap />
+    </>
+  );
+}
