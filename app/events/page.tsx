@@ -1,6 +1,7 @@
 import PageHero from "@/components/PageHero";
 import { buildMetadata } from "@/lib/seo";
 import { currentEvent } from "@/lib/siteData";
+import { heroForSlug } from "@/lib/heroImages";
 
 export const metadata = buildMetadata("events");
 
@@ -14,6 +15,24 @@ const upcomingEvents = [
     city: currentEvent.city,
     date: currentEvent.date,
     description: "Stop by our booth — bring items to sell or trade on the spot.",
+  },
+  {
+    name: "Dallas Card Show",
+    city: "Allen, TX",
+    date: "September 10–13, 2026",
+    url: "https://www.dallascardshow.com",
+    description: (
+      <>
+        Official show — <a href="https://www.dallascardshow.com" target="_blank" rel="noopener noreferrer">dallascardshow.com</a>
+      </>
+    ),
+  },
+  {
+    name: "Dallas Card Show",
+    city: "Allen, TX",
+    date: "November 5–8, 2026",
+    url: "https://www.dallascardshow.com",
+    description: "Official show — visit the Dallas Card Show website for details.",
   },
 ];
 
