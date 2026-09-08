@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { navCategories, currentEvent } from "@/lib/siteData";
 import NewsletterForm from "@/components/NewsletterForm";
-import SearchDropdown from "@/components/SearchDropdown";
 
 export default function SiteHeader() {
   return (
@@ -48,7 +47,6 @@ export default function SiteHeader() {
         </div>
 
         <div className="nav-right">
-          <SearchDropdown />
           <button className="hamburger" aria-label="Menu">
             ☰
           </button>
