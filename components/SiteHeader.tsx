@@ -26,7 +26,11 @@ export default function SiteHeader() {
 
       <nav className="nav">
         <Link href="/" className="logo-area">
-          <img src="/images/logo/ultimate_logo.png" alt="Ultimate Collectibles" className="site-logo" />
+          <div className="site-logo-arrow" aria-hidden>
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 12h14M13 6l6 6-6 6" stroke="white" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </div>
           <span className="logo-text">
             Ultimate Collectibles
             <span>Hopkins, MN</span>
