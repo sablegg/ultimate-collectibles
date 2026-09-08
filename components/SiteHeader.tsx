@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { navCategories, currentEvent } from "@/lib/siteData";
 import NewsletterForm from "@/components/NewsletterForm";
+import PageMenu from "@/components/PageMenu";
 
 export default function SiteHeader() {
   return (
@@ -47,6 +48,7 @@ export default function SiteHeader() {
         </div>
 
         <div className="nav-right">
+          <PageMenu />
           <button className="hamburger" aria-label="Menu">
             ☰
           </button>
