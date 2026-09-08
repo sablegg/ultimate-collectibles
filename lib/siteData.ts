@@ -52,8 +52,8 @@ export function getStoreStatus(now: Date = new Date()) {
 }
 
 export const navCategories = [
-  { name: "Pokémon", href: "/pokemon" },
   { name: "Sports Cards", href: "/sports-cards" },
+  { name: "Pokémon", href: "/pokemon" },
   { name: "Non-Sports", href: "/non-sports-cards" },
   { name: "Records", href: "/records" },
   { name: "Comics", href: "/comics" },
