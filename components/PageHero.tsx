@@ -15,6 +15,7 @@ export default function PageHero({
 
   return (
     <div className="page-hero" style={style}>
+      {heroImage && <img src={heroImage} alt="" className="page-hero-img" />}
       {eyebrow && <div className="page-hero-eyebrow">{eyebrow}</div>}
       <h1 className="page-hero-header">{header}</h1>
       {intro && <p className="page-hero-intro">{intro}</p>}
