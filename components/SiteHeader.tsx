@@ -32,7 +32,7 @@ export default function SiteHeader() {
 
       <nav className="nav">
         <Link href="/" className="logo-area">
-          <img src="/images/logo/ultimate_logo.png" alt="Ultimate Collectibles" className="site-logo" />
+          <img src="/images/logo/Ultimate%20Collectibles%20sm.png" alt="Ultimate Collectibles" className="site-logo" />
           <span className="logo-text">
             Ultimate Collectibles
             <span>Hopkins, MN</span>
