@@ -39,11 +39,6 @@ export default function NewsletterForm() {
       <label style={{ display: "none" }} htmlFor="newsletter-email">Email</label>
       <input id="newsletter-email" name="email" type="email" placeholder="Your email" required style={{ padding: '6px 8px', borderRadius: 6, border: '1px solid rgba(255,255,255,0.15)', background: 'rgba(255,255,255,0.06)', color: 'white' }} />
       <button type="submit" style={{ background: '#ED2227', color: 'white', border: 'none', padding: '6px 10px', borderRadius: 6 }}>Join</button>
-      <div className="email-arrow email-arrow--mirrored" aria-hidden>
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M5 12h14M13 6l6 6-6 6" stroke="white" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
-      </div>
     </form>
   );
 }
