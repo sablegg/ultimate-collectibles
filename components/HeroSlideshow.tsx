@@ -18,14 +18,7 @@ export default function HeroSlideshow({ intervalMs = 6000 }: { intervalMs?: numb
       <Link href={current.href || "/"} className="hero-slide" aria-label={current.alt || "hero"}>
         <img src={current.src} alt={current.alt || "hero image"} />
       </Link>
-
-      <div className="hero-overlay">
-        <div>
-          <div className="hero-label">Buy · Sell · Trade</div>
-          <div className="hero-sublabel">Pokémon · Sports Cards · Records · Comics &amp; more</div>
-        </div>
-        <div className="hero-right" />
-      </div>
+      {/* hero overlay label moved to homepage content */}
     </div>
   );
 }

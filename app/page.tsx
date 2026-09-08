@@ -36,6 +36,13 @@ export default function HomePage() {
             sell, and join the email list so you can catch up with us at one
             of our many upcoming shows/events!
           </p>
+          <div className="home-hero-label" style={{ marginTop: 12 }}>
+            <div>
+              <div className="hero-label">Buy · Sell · Trade</div>
+              <div className="hero-sublabel">Pokémon · Sports Cards · Records · Comics &amp; more</div>
+            </div>
+            <div className="hero-right" />
+          </div>
         </div>
       </div>
 
