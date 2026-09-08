@@ -6,8 +6,8 @@ import HeroSlideshow from "@/components/HeroSlideshow";
 export const metadata = buildMetadata("home");
 
 const categories = [
-  { name: "Pokémon", href: "/pokemon", icon: "🃏", tag: "New & vintage" },
   { name: "Sports Cards", href: "/sports-cards", icon: "🏆", tag: "Bulk buying" },
+  { name: "Pokémon", href: "/pokemon", icon: "🃏", tag: "New & vintage" },
   { name: "Non-Sports Cards", href: "/non-sports-cards", icon: "🎴", tag: "TCG & pop culture" },
   { name: "Records", href: "/records", icon: "🎵", tag: "In-store new releases" },
   { name: "Comics", href: "/comics", icon: "📖", tag: "Golden Age to Modern" },
@@ -31,7 +31,7 @@ export default function HomePage() {
             Collectibles Store — Hopkins, MN
           </h1>
           <p style={{ color: "#444", lineHeight: 1.7 }}>
-            Come to the store to shop new and vintage Pokémon, Sports Cards,
+            Come to the store to shop new and vintage Sports Cards, Pokémon,
             Records &amp; Much More... You can bring in items to trade or
             sell, and join the email list so you can catch up with us at one
             of our many upcoming shows/events!
@@ -67,6 +67,16 @@ export default function HomePage() {
         </div>
         <Link className="banner-btn" href="/appraisal">
           Book Now →
+        </Link>
+      </div>
+
+      <div className="action-banner blue" style={{ marginTop: 12 }}>
+        <div className="banner-left">
+          Trading &amp; Consignment
+          <span>Bring items to trade or consign — ask in-store for details</span>
+        </div>
+        <Link className="banner-btn" href="/buy-sell-trade">
+          Learn More →
         </Link>
       </div>
 
