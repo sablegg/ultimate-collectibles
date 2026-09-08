@@ -1,5 +1,6 @@
 import Link from "next/link";
 import PageHero from "@/components/PageHero";
+import { heroForSlug } from "@/lib/heroImages";
 import InquiryForm from "@/components/InquiryForm";
 import DirectionsMap from "@/components/DirectionsMap";
 import { buildMetadata } from "@/lib/seo";

@@ -1,5 +1,6 @@
 import PageHero from "@/components/PageHero";
 import { buildMetadata } from "@/lib/seo";
+import { heroForSlug } from "@/lib/heroImages";
 
 export const metadata = buildMetadata("faqs");
 
