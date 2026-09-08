@@ -9,7 +9,12 @@ export default function SiteHeader() {
           Phase 1: mailto/anchor to contact form. Phase 3: modal wired to Constant Contact. */}
       <div className="email-bar">
         <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-          <span style={{ color: 'white' }}>✉ Stay up to date!</span>
+          <div className="email-arrow" aria-hidden>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 12h14M13 6l6 6-6 6" stroke="white" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </div>
+          <span style={{ color: 'white', fontWeight: 700 }}>Stay up to date!</span>
           <NewsletterForm />
         </div>
       </div>
@@ -26,11 +31,7 @@ export default function SiteHeader() {
 
       <nav className="nav">
         <Link href="/" className="logo-area">
-          <div className="site-logo-arrow" aria-hidden>
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5 12h14M13 6l6 6-6 6" stroke="white" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </div>
+          <img src="/images/logo/ultimate_logo.png" alt="Ultimate Collectibles" className="site-logo" />
           <span className="logo-text">
             Ultimate Collectibles
             <span>Hopkins, MN</span>
