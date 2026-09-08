@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { navCategories, currentEvent } from "@/lib/siteData";
+import NewsletterForm from "@/components/NewsletterForm";
 
 export default function SiteHeader() {
   return (
@@ -7,8 +8,10 @@ export default function SiteHeader() {
       {/* EMAIL LIST BAR — "here" opens the email signup flow.
           Phase 1: mailto/anchor to contact form. Phase 3: modal wired to Constant Contact. */}
       <div className="email-bar">
-        ✉ Stay up to date! Join our email list{" "}
-        <Link href="/contact#email-list">here</Link>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+          <span style={{ color: 'white' }}>✉ Stay up to date!</span>
+          <NewsletterForm />
+        </div>
       </div>
 
       {/* EVENTS BAR — hand-edit `currentEvent` in lib/siteData.ts until

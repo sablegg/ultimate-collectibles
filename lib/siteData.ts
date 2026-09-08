@@ -86,4 +86,5 @@ export const formEndpoints = {
   contact: process.env.NEXT_PUBLIC_FORMSPREE_CONTACT || "",
   buyingCollections: process.env.NEXT_PUBLIC_FORMSPREE_COLLECTIONS || "",
   appraisal: process.env.NEXT_PUBLIC_FORMSPREE_APPRAISAL || "",
+  newsletter: process.env.NEXT_PUBLIC_FORMSPREE_NEWSLETTER || "",
 };
