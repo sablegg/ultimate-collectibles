@@ -71,9 +71,9 @@ export const footerLinks = [
 // Homepage top event bar. Employee-editable in Phase 3 — for now,
 // hand edit this string when a show is booked.
 export const currentEvent = {
-  name: "Twin Cities Collectors Expo",
-  city: "Minneapolis",
-  date: "June 14th",
+  name: "Dallas Card Show",
+  city: "Allen, TX",
+  date: "Sept 10–13",
   active: true,
 };
 
