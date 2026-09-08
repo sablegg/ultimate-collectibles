@@ -30,6 +30,11 @@ export default function AboutPage() {
             experience for anyone who loves this hobby.
           </p>
           <p>
+            The experience needed to truly know collectibles started in the
+            80's with owner Shane Cohen — it&rsquo;s a perspective shaped by
+            decades of buying, selling, and trading.
+          </p>
+          <p>
             You can also find us at a number of local card and toy shows, as
             well as out-of-state shows.{" "}
             <Link href="/events" className="text-link">
