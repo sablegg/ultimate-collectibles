@@ -4,8 +4,8 @@ export type HeroItem = { src: string; href?: string; alt?: string };
 // Slideshow images (homepage) — order matters.
 export const slideshowImages: HeroItem[] = [
   { src: "/images/hero/collections_hero.jpg", href: "/buying-collections", alt: "Collections" },
-  { src: "/images/hero/Pokemon_hero.jpg", href: "/pokemon", alt: "Pokémon" },
   { src: "/images/hero/sports_hero.jpg", href: "/sports-cards", alt: "Sports Cards" },
+  { src: "/images/hero/Pokemon_hero.jpg", href: "/pokemon", alt: "Pokémon" },
   { src: "/images/hero/toys_hero.jpg", href: "/memorabilia", alt: "Toys" },
   { src: "/images/hero/Records_hero.jpg", href: "/records", alt: "Records" },
   { src: "/images/hero/hero.jpg", href: "/", alt: "Shop" },
