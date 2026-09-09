@@ -57,6 +57,7 @@ export const navCategories = [
   { name: "Non-Sports", href: "/non-sports-cards" },
   { name: "Records", href: "/records" },
   { name: "Comics", href: "/comics" },
+  { name: "Toys", href: "/toys" },
   { name: "Posters", href: "/posters" },
   { name: "Memorabilia", href: "/memorabilia" },
   { name: "Supplies", href: "/supplies" },

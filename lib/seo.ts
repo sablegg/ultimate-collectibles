@@ -78,6 +78,12 @@ export const seoMap: Record<string, SeoEntry> = {
       "Browse decades of comic books, from Golden Age to modern issues. We also buy comic collections of any size. Visit our Hopkins, MN store.",
     path: "/comics",
   },
+  toys: {
+    title: "Toys & Collectible Figures | Ultimate Collectibles",
+    description:
+      "Movie toys, sports figures, sci-fi collectibles, classic games, and pop culture treasures from our Hopkins, MN store.",
+    path: "/toys",
+  },
   posters: {
     title: "Movie & Concert Posters | Ultimate Collectibles MN",
     description:

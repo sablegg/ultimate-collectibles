@@ -12,6 +12,7 @@ const staticPages = [
   { name: "Buying Collections", href: "/buying-collections" },
   { name: "FAQs", href: "/faqs" },
   { name: "Photos", href: "/photos" },
+  { name: "Toys", href: "/toys" },
   { name: "eBay", href: "/ebay" },
   { name: "Legal", href: "/legal" },
 ];

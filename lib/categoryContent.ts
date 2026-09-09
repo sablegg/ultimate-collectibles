@@ -111,6 +111,25 @@ export const categoryPages: Record<string, CategoryPageData> = {
     featuredEnabled: false,
     featuredLabel: "Featured Items",
   },
+  toys: {
+    slug: "toys",
+    seoKey: "toys",
+    header: "Toys & Collectible Figures",
+    intro:
+      "We are suckers for a good movie toy, science fiction ship, sports figure, or classic game! Pop in periodically to see what’s in stock, ask what else we have, or come to our twice yearly sale where we bring out thousands of collectible favorites! We have been known to buy toy collections of any size. Our interests include sports figures, movie and pop culture figures and much more!",
+    bullets: [
+      "Movie and TV toys & figures",
+      "Science fiction ships and memorabilia",
+      "Sports figures and collectibles",
+      "Classic games and nostalgic favorites",
+      "Pop culture and display pieces",
+    ],
+    weBuyTitle: "We buy toy collections",
+    weBuyText:
+      "If you’re ready to part with a toy collection or just want to know what it’s worth, bring it in or get in touch. We’re always interested in sports figures, movie toys, collectibles, and larger mixed collections.",
+    featuredEnabled: false,
+    featuredLabel: "Featured Items",
+  },
   posters: {
     slug: "posters",
     seoKey: "posters",
@@ -169,6 +188,7 @@ export const categoryOrder = [
   "non-sports-cards",
   "records",
   "comics",
+  "toys",
   "posters",
   "memorabilia",
   "supplies",

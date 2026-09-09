@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { useRef } from "react";
 import { buildMetadata } from "@/lib/seo";
 import DirectionsMap from "@/components/DirectionsMap";
 import HeroSlideshow from "@/components/HeroSlideshow";
@@ -11,20 +14,26 @@ const categories = [
   { name: "Non-Sports Cards", href: "/non-sports-cards", icon: "🎴", tag: "TCG & pop culture" },
   { name: "Records", href: "/records", icon: "🎵", tag: "In-store new releases" },
   { name: "Comics", href: "/comics", icon: "📖", tag: "Golden Age to Modern" },
+  { name: "Toys", href: "/toys", icon: "🧩", tag: "Figures & collectibles" },
   { name: "Movie Posters", href: "/posters", icon: "🖼", tag: "Vintage & modern" },
   { name: "Memorabilia", href: "/memorabilia", icon: "👕", tag: "Signed & authenticated" },
   { name: "Supplies", href: "/supplies", icon: "📦", tag: "Sleeves, binders..." },
 ];
 
 export default function HomePage() {
+  const categoriesRef = useRef<HTMLDivElement | null>(null);
+
+  const scrollCategories = (direction: "left" | "right") => {
+    const el = categoriesRef.current;
+    if (!el) return;
+    const amount = Math.max(el.clientWidth * 0.7, 260);
+    el.scrollBy({ left: direction === "left" ? -amount : amount, behavior: "smooth" });
+  };
+
   return (
     <>
-      {/* HERO — swap for real JPG/WebP images at /public/images/hero/.
-          Recommended size: 1600x500px. Ken Burns animation + slide order
-          become admin-managed in Phase 3. */}
       <HeroSlideshow />
 
-      {/* WELCOME / INTRO — approved copy */}
       <div className="page-content" style={{ paddingBottom: 0 }}>
         <div className="content-block" style={{ textAlign: "center" }}>
           <h1 style={{ fontSize: 26, color: "#111", marginBottom: 12 }}>
@@ -37,17 +46,22 @@ export default function HomePage() {
             of our many upcoming shows/events!
           </p>
           <div className="home-hero-label" style={{ marginTop: 12 }}>
-            <div>
+            <div className="home-hero-label-inner">
               <div className="hero-label">Buy · Sell · Trade</div>
-              <div className="hero-sublabel">Pokémon · Sports Cards · Records · Comics &amp; more</div>
+              <div className="hero-sublabel">Pokémon · Sports Cards · Records · Comics · Toys &amp; more</div>
             </div>
-            <div className="hero-right" />
           </div>
         </div>
       </div>
 
-      <div className="section-header">Shop by category</div>
-      <div className="categories-grid">
+      <div className="section-header-wrap">
+        <div className="section-header">Shop by category</div>
+        <div className="category-scroll-controls" aria-label="Category navigation">
+          <button type="button" className="scroll-arrow" onClick={() => scrollCategories("left")} aria-label="Scroll categories left">←</button>
+          <button type="button" className="scroll-arrow" onClick={() => scrollCategories("right")} aria-label="Scroll categories right">→</button>
+        </div>
+      </div>
+      <div className="categories-grid" ref={categoriesRef}>
         {categories.map((c) => (
           <Link key={c.href} href={c.href} className="cat-card">
             <div className="cat-icon">{c.icon}</div>
