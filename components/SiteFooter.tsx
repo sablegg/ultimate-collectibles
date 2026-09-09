@@ -6,16 +6,17 @@ export default function SiteFooter() {
 
   return (
     <footer className="footer">
-      <div>
-        <div className="footer-store-name">{business.name}</div>
+      <div className="footer-left-block">
+        <div className="footer-store-name-row">
+          <div className="footer-store-name">{business.name}</div>
+          <a href={business.emailHref} className="footer-email-button" aria-label="Email Ultimate Collectibles">
+            Email Us
+          </a>
+        </div>
         <div className="footer-info">
           {business.fullAddress}
           <br />
           {business.phone}
-          <br />
-          <a href={business.emailHref} className="footer-email-button" aria-label="Email Ultimate Collectibles">
-            Email Us
-          </a>
         </div>
       </div>
 

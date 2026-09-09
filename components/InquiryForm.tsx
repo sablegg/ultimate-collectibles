@@ -208,7 +208,7 @@ export default function InquiryForm({
       {!showNewsletterFields && (
         <label className="full-width consent-label">
           <input type="checkbox" name="consent" value="yes" required />{' '}
-          By submitting this form, you agree that Ultimate Collectibles may use the information provided to contact you regarding your appointment or request. See our <a href="/legal#privacy">Privacy Policy</a>.
+          By submitting this form, you agree that Ultimate Collectibles may use the information provided to contact you regarding your appointment or request. See our <a href="/legal#privacy">Privacy Policy</a>
           <ValidationError prefix="Consent" field="consent" errors={state.errors} />
         </label>
       )}

@@ -30,9 +30,9 @@ export default function NewsletterForm() {
       <button type="submit" disabled={state.submitting} style={{ background: '#ED2227', color: 'white', border: 'none', padding: '6px 10px', borderRadius: 6 }}>
         {state.submitting ? "Joining..." : "Join"}
       </button>
-      <label style={{ display: "flex", alignItems: "center", gap: 8, color: "white", fontSize: 12, width: "100%" }}>
+      <label style={{ display: "flex", alignItems: "center", gap: 8, color: "white", fontSize: 12, width: "100%", fontWeight: 400 }}>
         <input type="checkbox" name="newsletter_consent" value="yes" required />
-        <span>I agree that I can be contacted for upcoming special events, discounts, or offers from Ultimate Collectibles.</span>
+        <span style={{ fontWeight: 400 }}>I agree that I can be contacted for upcoming special events, discounts, or offers from Ultimate Collectibles.</span>
       </label>
       <ValidationError field="email" errors={state.errors} />
     </form>

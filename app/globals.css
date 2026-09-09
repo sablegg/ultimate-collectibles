@@ -49,7 +49,7 @@ a { color: inherit; text-decoration: none; }
   color: white;
   font-size: 13px;
   text-align: center;
-  padding: 8px 20px;
+  padding: 6px 16px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,14 +63,16 @@ a { color: inherit; text-decoration: none; }
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 8px 14px;
-  border-radius: 999px;
+  padding: 10px 16px;
+  border-radius: 6px;
   background: #ED2227;
   color: #fff;
   font-weight: 700;
   letter-spacing: 0.02em;
   text-decoration: none;
   transition: background 0.15s ease;
+  border: none;
+  line-height: 1.2;
 }
 
 .footer-email-button:hover,
@@ -283,7 +285,9 @@ a { color: inherit; text-decoration: none; }
 /* ── FOOTER ────────────────────────────────────────────── */
 
 .footer { background: #111; padding: 16px 24px; display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 16px; border-top: 1px solid #222; }
-.footer-store-name { color: #eee; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+.footer-left-block { display: flex; flex-direction: column; align-items: flex-start; }
+.footer-store-name-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.footer-store-name { color: #eee; font-size: 14px; font-weight: 600; margin-bottom: 0; }
 .footer-info { color: #aaa; font-size: 12px; line-height: 2; }
 .footer-info a { color: #22ADFF; text-decoration: none; }
 .footer-hours { color: #aaa; font-size: 12px; }
