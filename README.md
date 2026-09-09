@@ -9,8 +9,9 @@ Phase 3 can convert them into a CMS without rebuilding the site.
 - 22 pages: homepage, 8 category pages (shared template), Buy/Sell/Trade,
   Buying Collections, Appraisal, Events, About, Contact, FAQs, Photos,
   eBay, Legal, plus a placeholder /admin/login stub.
-- Forms (Buying Collections, Appraisal, Contact) post to Formspree — a
-  free form-relay service, no backend required. See `.env.local.example`.
+- Forms (Contact, Buying Collections, Appraisal, and Newsletter) post to
+  Formspree — a free form-relay service, no backend required. See
+  `.env.local.example`.
 - SEO: unique title/description per page (`lib/seo.ts`), sitemap.xml,
   robots.txt, and LocalBusiness schema in the root layout.
 - Brand colors, fonts, and layout ported directly from the approved
@@ -22,8 +23,9 @@ Phase 3 can convert them into a CMS without rebuilding the site.
    README there, then swap the placeholder markup in
    `components/SiteHeader.tsx` (logo) and `app/page.tsx` (hero) for real
    `<Image>` tags.
-2. **Formspree endpoints** — create a free account, make 3 forms
-   (Contact, Buying Collections, Appraisal), and fill in `.env.local`.
+2. **Formspree endpoints** — create a free account, make 4 forms
+   (Contact, Buying Collections, Appraisal, Newsletter), and fill in
+   `.env.local`.
 3. **eBay store URL** — `app/ebay/page.tsx` has a placeholder link.
 4. **Legal page** — has attorney review the Terms/Shipping/Refund/Privacy
    copy in `app/legal/page.tsx` before relying on it.

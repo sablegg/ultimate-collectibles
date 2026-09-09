@@ -68,10 +68,12 @@ export default function AppraisalPage() {
           <h2 className="content-block-title">Book an Appraisal</h2>
           <InquiryForm
             formName="Collection Appraisal"
-            endpoint={formEndpoints.appraisal}
+            endpoint={formEndpoints.serviceInquiries}
+            formVariant="service"
             showCollectionField
             showPathField
-            submitLabel="Book an Appraisal →"
+            showServiceFields
+            submitLabel="Submit Form"
           />
         </div>
       </div>

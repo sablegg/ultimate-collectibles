@@ -13,7 +13,9 @@ export default function SiteFooter() {
           <br />
           {business.phone}
           <br />
-          <a href={`mailto:${business.email}`}>{business.email}</a>
+          <a href={business.emailHref} className="footer-email-button" aria-label="Email Ultimate Collectibles">
+            Email Us
+          </a>
         </div>
       </div>
 

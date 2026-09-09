@@ -22,7 +22,9 @@ export default function ContactPage() {
           <p>
             Phone: <a href={business.phoneHref}>{business.phone}</a>
             <br />
-            Email: <a href={`mailto:${business.email}`}>{business.email}</a>
+            <a href={business.emailHref} className="contact-email-button" aria-label="Email Ultimate Collectibles">
+              Email Us
+            </a>
             <br />
             Address: {business.fullAddress}
           </p>
@@ -39,6 +41,7 @@ export default function ContactPage() {
           <InquiryForm
             formName="Contact"
             endpoint={formEndpoints.contact}
+            formVariant="contact"
             submitLabel="Send Message"
           />
         </div>

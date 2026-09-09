@@ -140,7 +140,10 @@ export default function LegalPage() {
           <p>
             {business.name} / {business.shortName}
             <br />{business.fullAddress}
-            <br />Email: <a href={`mailto:${business.email}`}>{business.email}</a>
+            <br />
+            <a href={business.emailHref} className="contact-email-button" aria-label="Email Ultimate Collectibles">
+              Email Us
+            </a>
             <br />Phone: <a href={business.phoneHref}>{business.phone}</a>
           </p>
           <p>

@@ -63,10 +63,12 @@ export default function BuyingCollectionsPage() {
           </p>
           <InquiryForm
             formName="Buying Collections"
-            endpoint={formEndpoints.buyingCollections}
+            endpoint={formEndpoints.serviceInquiries}
+            formVariant="service"
             showCollectionField
             showPathField
-            submitLabel="Get a Quote →"
+            showServiceFields
+            submitLabel="Submit Form"
           />
         </div>
       </div>
