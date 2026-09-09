@@ -21,16 +21,19 @@ export default function NewsletterForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} style={{ display: "flex", gap: 6, alignItems: "center", flexWrap: "wrap", justifyContent: "center", maxWidth: 900, margin: "0 auto" }}>
-      <input type="hidden" name="form_name" value="Newsletter" />
-      <label style={{ display: "none" }} htmlFor="newsletter-name">Name</label>
-      <input id="newsletter-name" name="name" type="text" placeholder="Your name" required style={{ padding: '4px 8px', borderRadius: 6, border: '1px solid rgba(255,255,255,0.15)', background: 'rgba(255,255,255,0.06)', color: 'white', minWidth: 110, width: 120, fontSize: 12 }} />
-      <label style={{ display: "none" }} htmlFor="newsletter-email">Email</label>
-      <input id="newsletter-email" name="email" type="email" placeholder="Your email" required style={{ padding: '4px 8px', borderRadius: 6, border: '1px solid rgba(255,255,255,0.15)', background: 'rgba(255,255,255,0.06)', color: 'white', minWidth: 160, width: 170, fontSize: 12 }} />
-      <button type="submit" disabled={state.submitting} style={{ background: '#ED2227', color: 'white', border: '1px solid rgba(255,255,255,0.25)', padding: '5px 12px', borderRadius: 6, fontSize: 12, lineHeight: 1.2 }}>
-        {state.submitting ? "Joining..." : "Join"}
-      </button>
-      <label style={{ display: "flex", alignItems: "center", gap: 8, color: "white", fontSize: 11, width: "100%", fontWeight: 400, justifyContent: "center", marginTop: 2, lineHeight: 1.3 }}>
+    <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: 4, alignItems: "center", justifyContent: "center" }}>
+      <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 6, flexWrap: "nowrap" }}>
+        <input type="hidden" name="form_name" value="Newsletter" />
+        <label style={{ display: "none" }} htmlFor="newsletter-name">Name</label>
+        <input id="newsletter-name" name="name" type="text" placeholder="Your name" required style={{ padding: '4px 8px', borderRadius: 6, border: '1px solid rgba(255,255,255,0.15)', background: 'rgba(255,255,255,0.06)', color: 'white', minWidth: 100, width: 120, fontSize: 12 }} />
+        <label style={{ display: "none" }} htmlFor="newsletter-email">Email</label>
+        <input id="newsletter-email" name="email" type="email" placeholder="Your email" required style={{ padding: '4px 8px', borderRadius: 6, border: '1px solid rgba(255,255,255,0.15)', background: 'rgba(255,255,255,0.06)', color: 'white', minWidth: 150, width: 170, fontSize: 12 }} />
+        <button type="submit" disabled={state.submitting} style={{ background: '#ED2227', color: 'white', border: '1px solid rgba(255,255,255,0.25)', padding: '5px 12px', borderRadius: 6, fontSize: 12, lineHeight: 1.2, whiteSpace: 'nowrap' }}>
+          {state.submitting ? "Joining..." : "Join"}
+        </button>
+      </div>
+
+      <label style={{ display: "flex", alignItems: "center", gap: 8, color: "white", fontSize: 11, fontWeight: 400, justifyContent: "center", textAlign: "center", lineHeight: 1.3, marginTop: 2 }}>
         <input type="checkbox" name="newsletter_consent" value="yes" required style={{ width: 12, height: 12, margin: 0 }} />
         <span style={{ fontWeight: 400 }}>I agree that I can be contacted for upcoming special events, discounts, or offers from Ultimate Collectibles.</span>
       </label>
