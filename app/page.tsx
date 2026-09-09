@@ -93,8 +93,8 @@ export default function HomePage() {
 
       <div className="action-banner blue">
         <div className="banner-left">
-          Trading &amp; Consignment
-          <span>Bring items to trade or consign — ask in-store for details</span>
+          Trading
+          <span>Bring items to trade — ask in-store for details</span>
         </div>
         <Link className="banner-btn" href="/buy-sell-trade">
           Learn More →
