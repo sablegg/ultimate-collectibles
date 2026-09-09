@@ -49,9 +49,6 @@ export default function SiteHeader() {
 
         <div className="nav-right">
           <PageMenu />
-          <button className="hamburger" aria-label="Menu">
-            ☰
-          </button>
         </div>
       </nav>
     </>
