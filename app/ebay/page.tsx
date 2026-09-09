@@ -8,24 +8,20 @@ export const metadata = buildMetadata("ebay");
 // discrepancy (ultimate-collectiblesllc vs. talyho-enterprise) is
 // resolved. Full listing feed via the eBay API is Phase 3+ scope —
 // this is a static link-out for v1.
-const ebayStoreUrl = "https://www.ebay.com/str/YOUR-STORE-NAME-HERE";
+const ebayStoreUrl = "https://www.ebay.com/str/ultimatecollectiblesllc";
 
 export default function EbayPage() {
   return (
     <>
       <PageHero
         header="Shop on eBay"
-        intro="Can't make it to the store? Browse our active eBay listings — we ship anywhere in the US. Featured picks are selected by our team, and full listings are available on our eBay store."
+        intro="Can't make it to the store? Browse our active eBay listings — we ship anywhere in the US."
         heroImage={heroForSlug("ebay")}
       />
       <div className="page-content" style={{ textAlign: "center" }}>
         <a href={ebayStoreUrl} target="_blank" rel="noopener noreferrer" className="ebay-btn">
           Visit Our eBay Store →
         </a>
-        <p className="text-muted" style={{ marginTop: 20 }}>
-          Featured picks and the full live listing feed are coming in a
-          future update.
-        </p>
       </div>
     </>
   );

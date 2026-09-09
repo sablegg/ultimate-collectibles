@@ -27,10 +27,11 @@ export const categoryPages: Record<string, CategoryPageData> = {
     seoKey: "pokemon",
     header: "Pokémon Cards",
     intro:
-      "We carry a wide selection of Pokémon cards in-store — singles, lots, sealed product, and vintage. Whether you're building a deck, completing a set, or hunting for that one card you've been chasing, come in and take a look.",
+      "We carry a wide selection of Pokémon cards in-store — singles, packs, sealed product, and vintage finds. Whether you're building a deck, completing a set, or hunting for that one card you've been chasing, come in and take a look.",
     bullets: [
       "Sealed New Releases",
       "Sealed Older Items",
+      "Individual Packs",
       "Raw Pokémon cards - vintage and modern",
       "Graded Pokémon cards - vintage and modern",
       "We have various player and collectible supplies (playmats, sleeves, top loaders, etc.)",
@@ -46,16 +47,16 @@ export const categoryPages: Record<string, CategoryPageData> = {
     seoKey: "sportsCards",
     header: "Sports Cards",
     intro:
-      "From vintage baseball to modern rookies, we carry a constantly rotating selection of sports cards across all major sports. Come browse our singles, lots, and sets in-store.",
+      "From vintage baseball to modern rookies, we carry a constantly rotating selection of sports cards across all major sports. Come browse our singles, lots, and sets in-store and at events.",
     bullets: [
       "Football, basketball, baseball, WNBA, NWSL, FIFA, soccer, NASCAR, golf, MMA, MLW, collegiate and mixed entertainment cards",
-      "Sealed New Releases - lots of Panini sports cards in blaster box, hobby box, and even by the sealed case",
-      "Sealed Older Items - we always have a variety of vintage sealed sports cards",
-      "Raw sports cards - vintage and modern football, baseball, basketball, soccer, etc.",
-      "Graded sports cards - best vintage selection around and plenty of modern",
-      "Autographed sports cards and memorabilia (balls, bats, cards, posters, etc.)",
+      "Sealed New Releases - lots of Panini sports cards in blaster boxes, hobby boxes, and even by the sealed case!",
+      "Sealed Older Items - we always have a variety of vintage sealed sports cards. Looking for vintage sealed wax? We have it!",
+      "Raw sports cards - numerous vintage and modern football, baseball, basketball, soccer cards, etc.",
+      "Graded sports cards - best vintage selection around and plenty of modern graded sports cards",
+      "Autographed sports cards and memorabilia - balls, bats, cards, posters, etc.",
       "Boxed sets by year - many full and partial sets to complete your collection",
-      "Various memorabilia (bobbleheads, jerseys, sports toys, event tickets, promo items)",
+      "Various memorabilia - bobbleheads, jerseys, sports toys, event tickets, photos and promo items",
     ],
     weBuyTitle: "We also buy sports cards",
     weBuyText:
@@ -102,7 +103,7 @@ export const categoryPages: Record<string, CategoryPageData> = {
     seoKey: "comics",
     header: "Comics",
     intro:
-      "Browse our selection of comic books spanning decades of issues — superhero, indie, vintage, and more. Whether you're a longtime collector or picking up your first issue, we've got something for you.",
+      "We buy and sell vintage comics. Make sure to ask us about your favorites when you’re in store. We also bring comics to our twice yearly sale with amazing prices.\n\nOur comic books span decades of issues — superhero, indie, vintage, and more. Whether you're a longtime collector or picking up your first issue, we've got something for you.",
     bullets: [],
     weBuyTitle: "We buy comics",
     weBuyText:
@@ -115,7 +116,7 @@ export const categoryPages: Record<string, CategoryPageData> = {
     seoKey: "posters",
     header: "Movie Posters & Collectibles",
     intro:
-      "We carry original and reproduction movie posters, concert posters, and other collectible paper — a rotating selection of vintage and modern prints. A great find for fans and collectors alike.",
+      "We carry original and reproduction movie posters, concert posters, and other collectible paper — a rotating selection of vintage and modern prints. A great find for fans and collectors alike.\n\nWe don’t always have as much space as we’d like to keep posters displayed for sale in store. If we don’t have them available when you visit, please inquire as we may just have what you’re looking for!",
     bullets: [],
     weBuyTitle: "We buy posters",
     weBuyText:
@@ -129,7 +130,13 @@ export const categoryPages: Record<string, CategoryPageData> = {
     header: "Sports Memorabilia & Autographs",
     intro:
       "Signed jerseys, photos, programs, and other authenticated sports memorabilia — in-store inventory changes regularly. A great source for fans and serious collectors.",
-    bullets: [],
+    bullets: [
+      "Autographed sports jerseys",
+      "Autographed balls",
+      "Autographed cards",
+      "Bobbleheads and Figures",
+      "Merch and promotional items galore!",
+    ],
     weBuyTitle: "We buy memorabilia",
     weBuyText:
       "Got signed items or sports collectibles you're ready to part with? We buy memorabilia — bring it in to the store, or feel free to ask us at a card show or event. Large collections do require an appointment.",

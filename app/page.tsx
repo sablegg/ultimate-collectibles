@@ -77,7 +77,7 @@ export default function HomePage() {
         </Link>
       </div>
 
-      <div className="action-banner blue" style={{ marginTop: 12 }}>
+      <div className="action-banner blue">
         <div className="banner-left">
           Trading &amp; Consignment
           <span>Bring items to trade or consign — ask in-store for details</span>

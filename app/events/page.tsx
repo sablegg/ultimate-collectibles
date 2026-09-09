@@ -11,12 +11,6 @@ export const metadata = buildMetadata("events");
 // optional description or table number.
 const upcomingEvents = [
   {
-    name: currentEvent.name,
-    city: currentEvent.city,
-    date: currentEvent.date,
-    description: "Stop by our booth — bring items to sell or trade on the spot.",
-  },
-  {
     name: "Dallas Card Show",
     city: "Allen, TX",
     date: "September 10–13, 2026",
@@ -24,6 +18,8 @@ const upcomingEvents = [
     description: (
       <>
         Official show — <a href="https://www.dallascardshow.com" target="_blank" rel="noopener noreferrer">dallascardshow.com</a>
+        <br />
+        As you enter the main room turn right. We are located along the right wall between the bathroom doors.
       </>
     ),
   },
@@ -32,7 +28,13 @@ const upcomingEvents = [
     city: "Allen, TX",
     date: "November 5–8, 2026",
     url: "https://www.dallascardshow.com",
-    description: "Official show — visit the Dallas Card Show website for details.",
+    description: (
+      <>
+        Official show — <a href="https://www.dallascardshow.com" target="_blank" rel="noopener noreferrer">dallascardshow.com</a>
+        <br />
+        As you enter the main room turn right. We are located along the right wall between the bathroom doors.
+      </>
+    ),
   },
 ];
 
