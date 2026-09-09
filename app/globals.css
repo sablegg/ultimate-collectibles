@@ -49,7 +49,7 @@ a { color: inherit; text-decoration: none; }
   color: white;
   font-size: 13px;
   text-align: center;
-  padding: 4px 12px;
+  padding: 6px 12px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,6 +57,48 @@ a { color: inherit; text-decoration: none; }
 }
 
 .email-bar a { color: white; font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
+.newsletter-trigger {
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.45);
+  color: white;
+  border-radius: 6px;
+  padding: 5px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.newsletter-trigger:hover { background: rgba(255,255,255,0.18); }
+.newsletter-modal { position: fixed; inset: 0; display: none; z-index: 1000; }
+.newsletter-modal.open { display: block; }
+.newsletter-modal-backdrop { position: absolute; inset: 0; background: rgba(0,0,0,0.55); }
+.newsletter-modal-panel {
+  position: relative;
+  z-index: 1;
+  width: min(92vw, 560px);
+  margin: 90px auto 0;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+  padding: 24px 20px 18px;
+}
+.newsletter-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  line-height: 1;
+  color: #666;
+  cursor: pointer;
+}
+.newsletter-modal-panel h3 {
+  margin: 0 0 16px;
+  color: #111;
+  font-size: 24px;
+  text-align: center;
+}
 
 .footer-email-button,
 .contact-email-button {
