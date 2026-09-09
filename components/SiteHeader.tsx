@@ -9,13 +9,13 @@ export default function SiteHeader() {
       {/* EMAIL LIST BAR — "here" opens the email signup flow.
           Phase 1: mailto/anchor to contact form. Phase 3: modal wired to Constant Contact. */}
       <div className="email-bar">
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10, flexWrap: 'wrap', textAlign: 'center', width: '100%' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, flexWrap: 'wrap', textAlign: 'center', width: '100%' }}>
           <div className="email-arrow" aria-hidden>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5 12h14M13 6l6 6-6 6" stroke="white" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
-          <span style={{ color: 'white', fontWeight: 700, lineHeight: 1.2 }}>Stay up to date!</span>
+          <span style={{ color: 'white', fontWeight: 700, lineHeight: 1.2, fontSize: 13 }}>Stay up to date!</span>
           <NewsletterForm />
         </div>
       </div>
