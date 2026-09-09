@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     template: "%s",
   },
   description:
-    "A collectibles hobby store in Hopkins, MN buying, selling & trading Pokémon cards, sports cards, vinyl records, comics, memorabilia and more.",
+    "Ultimate Collectibles is a Hopkins, Minnesota collectibles shop buying, selling, and trading Pokémon cards, sports cards, records, comics, memorabilia, and more.",
 };
 
 const localBusinessSchema = {

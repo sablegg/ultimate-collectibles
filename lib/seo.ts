@@ -7,9 +7,9 @@ type SeoEntry = { title: string; description: string; path: string };
 // Pulled directly from the approved SEO metadata reference doc.
 export const seoMap: Record<string, SeoEntry> = {
   home: {
-    title: "Pokémon, Sports Cards & Vinyl Records | Hopkins, MN",
+    title: "Ultimate Collectibles | Pokémon, Sports Cards & More | Hopkins, MN",
     description:
-      "Buy, sell & trade Pokémon cards, sports cards, vinyl records, comics, memorabilia & more at Ultimate Collectibles in Hopkins, MN. Visit us or check upcoming shows.",
+      "Ultimate Collectibles buys, sells, and trades Pokémon cards, sports cards, records, comics, memorabilia, and more in Hopkins, Minnesota.",
     path: "/",
   },
   buySellTrade: {
