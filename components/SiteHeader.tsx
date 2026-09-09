@@ -1,9 +1,14 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 import { navCategories, currentEvent } from "@/lib/siteData";
 import NewsletterForm from "@/components/NewsletterForm";
 import PageMenu from "@/components/PageMenu";
 
 export default function SiteHeader() {
+  const [isNewsletterOpen, setIsNewsletterOpen] = useState(false);
+
   return (
     <>
       <div className="email-bar">
@@ -14,20 +19,20 @@ export default function SiteHeader() {
             </svg>
           </div>
           <span style={{ color: 'white', fontWeight: 700, lineHeight: 1.2, fontSize: 13 }}>Keep up-to-date with events, special offers &amp; discounts</span>
-          <button type="button" className="newsletter-trigger" onClick={() => document.getElementById('newsletter-modal')?.classList.add('open')}>
+          <button type="button" className="newsletter-trigger" onClick={() => setIsNewsletterOpen(true)}>
             Join Now
           </button>
         </div>
       </div>
 
-      <div id="newsletter-modal" className="newsletter-modal" role="dialog" aria-modal="true" aria-labelledby="newsletter-modal-title">
-        <div className="newsletter-modal-backdrop" onClick={() => document.getElementById('newsletter-modal')?.classList.remove('open')} />
+      <div id="newsletter-modal" className={`newsletter-modal ${isNewsletterOpen ? "open" : ""}`} role="dialog" aria-modal="true" aria-labelledby="newsletter-modal-title">
+        <div className="newsletter-modal-backdrop" onClick={() => setIsNewsletterOpen(false)} />
         <div className="newsletter-modal-panel">
-          <button type="button" className="newsletter-modal-close" onClick={() => document.getElementById('newsletter-modal')?.classList.remove('open')} aria-label="Close newsletter signup">
+          <button type="button" className="newsletter-modal-close" onClick={() => setIsNewsletterOpen(false)} aria-label="Close newsletter signup">
             ×
           </button>
           <h3 id="newsletter-modal-title">Join our email list</h3>
-          <NewsletterForm />
+          {isNewsletterOpen && <NewsletterForm />}
         </div>
       </div>
 
