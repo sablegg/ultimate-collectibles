@@ -265,6 +265,22 @@ a { color: inherit; text-decoration: none; }
   .categories-grid { gap: 8px; }
 }
 
+/* Mobile / tablet nav adjustments: hide full category list, tighten header */
+@media (max-width: 900px) {
+  .nav-cats { display: none; }
+  .nav { padding: 10px 14px; }
+  .logo-area { gap: 8px; }
+  .site-logo { width: 64px; }
+  .logo-text { display: none; }
+  .nav-right { margin-left: auto; }
+}
+
+@media (max-width: 480px) {
+  .site-logo { width: 56px; }
+  .email-bar { padding: 6px 8px; font-size: 12px; }
+  .newsletter-trigger { padding: 4px 10px; font-size: 12px; }
+}
+
 @media (max-width: 640px) {
   .hero-section { height: 240px; }
   .page-hero-img { height: 220px; }
