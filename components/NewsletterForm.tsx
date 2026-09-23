@@ -37,7 +37,9 @@ export default function NewsletterForm() {
 
       <label style={{ display: "flex", alignItems: "flex-start", gap: 8, color: "#333", fontSize: 12, lineHeight: 1.5, fontWeight: 400, textAlign: "left" }}>
         <input type="checkbox" name="newsletter_consent" value="yes" required style={{ width: 14, height: 14, marginTop: 2, flexShrink: 0 }} />
-        <span style={{ fontWeight: 400 }}>I agree that I can be contacted for upcoming special events, discounts, or offers from Ultimate Collectibles.</span>
+        <span style={{ fontWeight: 400 }}>
+          I agree that I can be contacted for upcoming special events, discounts, or offers from Ultimate Collectibles, and I agree to the <a href="/legal#privacy" target="_blank" rel="noreferrer">Privacy Policy</a>.
+        </span>
       </label>
 
       <ValidationError field="email" errors={state.errors} />

@@ -117,3 +117,6 @@ export const formEndpoints = {
   appraisal: process.env.NEXT_PUBLIC_FORMSPREE_APPRAISAL || "xqpkgneg",
   newsletter: process.env.NEXT_PUBLIC_FORMSPREE_NEWSLETTER || "xgaepdog",
 };
+
+// Centralized external store links
+export const ebayStoreUrl = process.env.NEXT_PUBLIC_EBAY_STORE_URL || "https://www.ebay.com/str/ultimatecollectiblesllc";

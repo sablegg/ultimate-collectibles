@@ -223,7 +223,7 @@ export default function InquiryForm({
       {showNewsletterFields && (
         <label className="full-width consent-label">
           <input type="checkbox" name="newsletter_consent" value="yes" required />{' '}
-          I agree that I can be contacted for upcoming special events, discounts, or offers from Ultimate Collectibles.
+          I agree that I can be contacted for upcoming special events, discounts, or offers from Ultimate Collectibles, and I agree to the <a href="/legal#privacy" target="_blank" rel="noreferrer">Privacy Policy</a>.
           <ValidationError prefix="Newsletter Consent" field="newsletter_consent" errors={state.errors} />
         </label>
       )}

@@ -4,11 +4,7 @@ import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata("ebay");
 
-// TODO: replace with your live eBay store URL once the account name
-// discrepancy (ultimate-collectiblesllc vs. talyho-enterprise) is
-// resolved. Full listing feed via the eBay API is Phase 3+ scope —
-// this is a static link-out for v1.
-const ebayStoreUrl = "https://www.ebay.com/str/ultimatecollectiblesllc";
+import { ebayStoreUrl } from "@/lib/siteData";
 
 export default function EbayPage() {
   return (
